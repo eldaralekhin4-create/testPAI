@@ -34,10 +34,15 @@ snake_body = [[100, 60], [80, 60], [60, 60]]
 direction = 'RIGHT'
 change_to = direction
 
-# Препятствия (упрощенный набор)
+# Препятствия (новый, более сложный набор)
 obstacles = [
-    pygame.Rect(200, 180, 400, block_size),
-    pygame.Rect(200, 400, 400, block_size)
+    # Четыре угловых блока
+    pygame.Rect(100, 100, 100, block_size),
+    pygame.Rect(600, 100, 100, block_size),
+    pygame.Rect(100, 480, 100, block_size),
+    pygame.Rect(600, 480, 100, block_size),
+    # Центральный разделитель
+    pygame.Rect(390, 200, block_size, 200),
 ]
 
 # Счет
